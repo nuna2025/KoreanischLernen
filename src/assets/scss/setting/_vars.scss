@@ -1,23 +1,36 @@
 :root {
     --mainfont-macondo: "Macondo";
-    --mainfont-hahmlet: "Hahmlet";
+    --mainfont-gowunbatang: "Gowun Batang";
   
     --black: #000;
-    --black100: #000;
-    --black200: #000;
-    --black300: #000;
-    --black400: #000;
+    --black100: #161616;
+    --black200: #222;
+    --black300: #333;
+    --black400: #444;
     --black500: #000;
+
+    --blackAlpha: #00000000;
+    --blackAlpha100: #00000025;
+    --blackAlpha200: #0000004d;
+    --blackAlpha300: #00000091;
+    --blackAlpha400: #000000c3;
+    --blackAlpha500: #000000eb;
     
     --white: #fff;
-    --white100: #fff;
-    --white200: #fff;
+    --white100: #efefef;
+    --white200: #d9d9d9;
     --white300: #fff;
     --white400: #fff;
     --white500: #fff;
-    
+
+    --red: #f00;
+    --red100: rgba(255, 0, 0, 0.3);
+
+    --blue:#00f;
+    --blue100: rgba(0, 0, 255, 0.3);
+
     // fonts setting 
-    font-family: var(--mainfont-macondo), var(--mainfont-hahmlet);
+    font-family: var(--mainfont-macondo), var(--mainfont-gowunbatang);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
