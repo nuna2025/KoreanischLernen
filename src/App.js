@@ -1,23 +1,22 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React, {Suspense, lazy} from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Main from './components/section/Main';
 
-import Home from './pages/Home'
-import Wordgame from './pages/Wordgame'
-import Fairytales from './pages/Fairytales'
-import Classicnovels from './pages/Classicnovels'
-import Search from './pages/Search'
-import Youtuber from './pages/Youtuber'
-import Youtubes from './pages/Youtubes'
-import Not from './pages/Not'
-import Header from './components/section/Header'
-import Main from './components/section/Main'
-import Footer from './components/section/Footer'
+const Home = lazy(() => import('./pages/Home'))
+const Wordgame = lazy(() => import('./pages/Wordgame'))
+const Fairytales = lazy(() => import('./pages/Fairytales'))
+const Classicnovels = lazy(() => import('./pages/Classicnovels'))
+const Search = lazy(() => import('./pages/Search'))
+const Youtuber = lazy(() => import('./pages/Youtuber'))
+const Youtubes = lazy(() => import('./pages/Youtubes'))
+const Not = lazy(() => import('./pages/Not'))
+
 
 function App() {
   return (
     <BrowserRouter>
-        <Header />
-        <Main>
+        <Suspense fallback={ <img src="https://example.com/real-image.png" alt="main image" width="300" height="200"
+     onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Fallback+Image';" /> }>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/wordgame' element={<Wordgame />} />
@@ -28,8 +27,7 @@ function App() {
                 <Route path='/youtubes' element={< Youtubes/>} />
                 <Route path='*' element={<Not />} />
             </Routes>
-        </Main>
-        <Footer />
+        </Suspense>
     </BrowserRouter>
   )
 }

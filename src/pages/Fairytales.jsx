@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Fairytales = () => {
   return (
-    <div>Fairytales</div>
+    <Main>
+      Fairytales
+    </Main>
   )
 }
 

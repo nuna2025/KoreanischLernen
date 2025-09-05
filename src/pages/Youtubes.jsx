@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Youtubes = () => {
   return (
-    <div>Youtubes</div>
+    <Main>
+      Youtubes
+    </Main>
   )
 }
 

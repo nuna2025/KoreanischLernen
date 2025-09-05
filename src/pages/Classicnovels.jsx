@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Classicnovels = () => {
   return (
-    <div>Classicnovels</div>
+    <Main>
+      Classicnovels
+    </Main>
   )
 }
 
