@@ -3,7 +3,9 @@ import Main from '../components/section/Main'
 
 const Wordgame = () => {
   return (
-    <Main>
+    <Main
+      title='korean word game'
+      description='korean to german word game'>
       Wordgame
     </Main>
   )

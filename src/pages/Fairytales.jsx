@@ -3,7 +3,9 @@ import Main from '../components/section/Main'
 
 const Fairytales = () => {
   return (
-    <Main>
+    <Main
+      title='korean fairy tales'
+      description='korean fairy tales'>
       Fairytales
     </Main>
   )

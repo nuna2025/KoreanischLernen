@@ -3,7 +3,9 @@ import Main from '../components/section/Main'
 
 const Classicnovels = () => {
   return (
-    <Main>
+    <Main
+      title='korean classic novels'
+      description='korean classic novels'>
       Classicnovels
     </Main>
   )

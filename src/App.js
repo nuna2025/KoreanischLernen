@@ -15,8 +15,7 @@ const Not = lazy(() => import('./pages/Not'))
 function App() {
   return (
     <BrowserRouter>
-        <Suspense fallback={ <img src="https://example.com/real-image.png" alt="main image" width="300" height="200"
-     onerror="this.onerror=null; this.src='https://via.placeholder.com/300x200?text=Fallback+Image';" /> }>
+        <Suspense fallback={ <Main/> }> {/* chage to Main for SEO */}
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/wordgame' element={<Wordgame />} />
