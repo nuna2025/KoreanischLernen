@@ -1,6 +1,9 @@
 :root {
-    --mainfont-macondo: "Macondo";
-    --mainfont-gowunbatang: "Gowun Batang";
+    --mainfont-oswald: "Oswald";
+    --mainfont-hahmlet: "Hahmlet";
+    // --mainfont-macondo: "Macondo";
+    //--mainfont-gowunbatang: "Gowun Batang";
+    
   
     --black: #000;
     --black100: #161616;
@@ -27,10 +30,47 @@
     --red100: rgba(255, 0, 0, 0.3);
 
     --blue:#00f;
-    --blue100: rgba(0, 0, 255, 0.3);
+    --blue100: rgba(0, 0, 255, 0.688);
+    --blue200: rgba(1, 1, 255, 0.297);
+    
+    --primary10: #221b00ff;
+    --primary20: #3a3000ff;
+    --primary25: #473b00ff;
+    --primary30: #544600ff;
+    --primary40: #6f5d00ff;
+    --primary50: #8a761aff;
+    --primary60: #a59033ff;
+    --primary70: #c1aa4bff;
+    --primary80: #dec663ff;
+    --primary90: #fce27cff;
+    --primary95: #fff0c1ff;
+    --primary99: #fffbfbff;
+    --primary100: #ffffffff;
+
+    --secondary0: #000000ff;
+    --secondary10: #211b04ff;
+    --secondary12: #251f07ff;
+    --secondary15: #2c250cff;
+    --secondary20: #373016ff;
+    --secondary25: #423b20ff;
+    --secondary30: #4e472aff;
+    --secondary35: #5a5235ff;
+    --secondary40: #675e40ff;
+    --secondary50: #807757ff;
+    --secondary60: #9a906fff;
+    --secondary70: #b6ab88ff;
+    --secondary80: #d2c6a1ff;
+    --secondary90: #eee2bcff;
+    --secondary95: #fdf0c9ff;
+    --secondary99: #fffbfbff;
+    --secondary100: #ffffffff;
+
+    --secondary25-1: rgba(76, 81, 7, 0.749);
+    --primary90-1: rgba(252, 226, 124, 0.353);
+
 
     // fonts setting 
-    font-family: var(--mainfont-macondo), var(--mainfont-gowunbatang);
+    font-family: var(--mainfont-oswald), var(--mainfont-hahmlet); // var(--mainfont-macondo), var(--mainfont-gowunbatang)
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -47,3 +87,5 @@
         line-height: 1.4;
     }
 }
+
+
