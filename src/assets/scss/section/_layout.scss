@@ -11,24 +11,37 @@
 #search {
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
     padding-left: 260px;
-    background: var(--secondary25-1); //var(--primary90);
+    background: var(--secondary25-1); 
 }
 #main {
     max-width: 2000px;
     min-height: 100vh;
     margin: 0 auto;
-    padding-top: 85px;
+    padding-top: 65px;
     padding-left: 260px;
 }
 #footer {
     text-align: center;
+    font-weight: 500;
     background-color: var(--secondary25-1);
     padding: 20px 20px 19px 20px;
     border-top: 5px solid var(--red);
     margin-left: 260px;
     width: calc(100% - 260px);
     font-size: 0.8rem;
+    backdrop-filter: blur(10px);
 }
+
+    // position: fixed; 
+    // bottom: 0;
+    // right: 0;
+    // width: 100%;
+    // height: 60px;
+    // margin: 0 auto;
+    // padding-left: 260px;
+    // text-align: center;
+    // background: var(--secondary25-1);
+

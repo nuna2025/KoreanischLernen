@@ -20,10 +20,10 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/wordgame' element={<Wordgame />} />
                 <Route path='/fairytales' element={<Fairytales />} />
-                <Route path='/classicnovels' element={<Classicnovels />} />
-                <Route path='/search/:searchID' element={<Search />} />
+                <Route path='/classicnovels' element={<Classicnovels />} />              
                 <Route path='/youtuber' element={<Youtuber />} />
-                <Route path='/youtubes' element={< Youtubes/>} />
+                <Route path='/youtubes' element={<Youtubes />} />
+                <Route path='/search/:searchID' element={<Search />} />
                 <Route path='*' element={<Not />} />
             </Routes>
         </Suspense>

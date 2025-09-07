@@ -21,10 +21,10 @@ const Main = ( props ) => {
             <Header />
             <Search />
             <main id='main' role='main'>
-                
-                {props.children}
+                {props.children}    
             </main>
             <Footer />
+            
         </HelmetProvider>
     )
 }
