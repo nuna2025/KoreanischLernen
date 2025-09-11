@@ -1,11 +1,5 @@
-/* src/style.css */
-.storybody {
-        // font-family: 'Noto Sans KR', Arial, sans-serif;
-        // margin: 0;
-        // padding: 20px;
-        // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        // min-height: 100vh;
 
+.storybody {
 
     .main-container {
         max-width: 1200px;
@@ -69,12 +63,18 @@
 
     .content-container {
         display: flex;
+        width: 100%;
         gap: 0;
         background: white;
         border-radius: 0 0 20px 20px;
         box-shadow: 0 15px 35px rgba(0,0,0,0.2);
         overflow: hidden;
     }
+
+    .story-voca-pharagh {
+        display: flex;
+    }
+
 
     .story-section {
         flex: 2;
@@ -235,42 +235,60 @@
         }
 
         /* 기존 .content-container는 그대로 두고, 새롭게 추가된 클래스에 대한 스타일을 정의합니다. */
-    .content-container-single-column {
-        background: white;
-        border-radius: 0 0 20px 20px;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        overflow: hidden;
-    }
+        .content-container-single-column {
+            background: white;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
 
-    .story-section {
-        /* flex를 제거하여 전체 너비를 사용하게 합니다. */
-        flex: none; 
-        padding: 40px;
-        line-height: 1.8;
-        font-size: 18px;
-        color: #333;
-        /* border-right는 더 이상 필요 없으므로 제거 */
-        border-right: none;
-    }
+        .story-section {
+            /* flex를 제거하여 전체 너비를 사용하게 합니다. */
+            flex: none; 
+            padding: 40px;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #333;
+            /* border-right는 더 이상 필요 없으므로 제거 */
+            border-right: none;
+        }
 
-    .vocabulary-section {
-        /* flex를 제거하여 전체 너비를 사용하게 합니다. */
-        flex: none;
-        background: #f8fafc;
-        padding: 40px;
-        /* 각 섹션 어휘 목록 간의 구분을 위해 상단에 선을 추가할 수 있습니다. */
-        border-top: 1px solid #e2e8f0;
-    }
-
-        // .story-section {
-        //     border-right: none;
-        //     border-bottom: 1px solid #e2e8f0;
-        //     padding: 30px;
-        // }
-
-        // .vocabulary-section {
-        //     padding: 30px;
-        // }
+        .vocabulary-section {
+            /* flex를 제거하여 전체 너비를 사용하게 합니다. */
+            flex: none;
+            background: #f8fafc;
+            padding: 40px;
+            /* 각 섹션 어휘 목록 간의 구분을 위해 상단에 선을 추가할 수 있습니다. */
+            border-top: 1px solid #e2e8f0;
+        }
     }
 
 }
+
+.story-card-preview {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0;
+
+    .story-card-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+    }
+
+    .story-card-content {
+        flex: 1;
+    }
+}
+
+    

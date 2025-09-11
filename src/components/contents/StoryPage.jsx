@@ -41,11 +41,13 @@ const StoryPage = ({ story }) => {
                     <div className="content-container-single-column">
                         {story.sections?.map((section, index) => (
                             <React.Fragment key={index}>
-                                <StorySection
-                                    title={section.title}
-                                    sentences={section.sentences}
-                                />
-                                <VocabularySection vocabList={section.vocabulary} />
+                                <div className='story-voca-pharagh'>
+                                    <StorySection
+                                        title={section.title}
+                                        sentences={section.sentences}
+                                    />
+                                    <VocabularySection vocabList={section.vocabulary} />
+                                </div>
                             </React.Fragment>
                         ))}
                     </div>
