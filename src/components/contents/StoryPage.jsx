@@ -9,35 +9,48 @@ const StoryPage = ({ story }) => {
     
     // Set the document title when the component mounts
     useEffect(() => {
-        document.title = `${story.title} - Korean/German Learning`;
-    }, [story.title]);
+        if (story?.title) {
+            document.title = `${story.title} - Korean/German Learning`;
+        }
+    }, [story?.title]);
+
+    // story가 없을 경우 에러 처리
+    if (!story) {
+        return (
+            <Main title='Story Not Found' description='The requested story could not be found.'>
+                <div className="main-container">
+                    <p>Story not found.</p>
+                </div>
+            </Main>
+        );
+    }
 
     return (
         <Main
          title='fairytale'
          description='korean fairytales'
         >
-            <div className="main-container">
-                <TitleSection
-                    title={story.title}
-                    subtitle={story.subtitle}
-                    description={story.description}
-                    imageSrc={story.imageSrc}
-                />
-                <div className="content-container-single-column"> 
-                    {story.sections.map((section, index) => (
-                        // 각 섹션과 그에 해당하는 어휘 목록을 함께 렌더링합니다.
-                        <React.Fragment key={index}>
-                            <StorySection
-                                title={section.title}
-                                sentences={section.sentences}
-                            />
-                            {/* 해당 섹션의 어휘 목록만 전달합니다. */}
-                            <VocabularySection vocabList={section.vocabulary} />
-                        </React.Fragment>
-                    ))}s
+            <section className='storybody'>
+                <div className="main-container">
+                    <TitleSection
+                        title={story.title}
+                        subtitle={story.subtitle}
+                        description={story.description}
+                        imageSrc={story.imageSrc}
+                    />
+                    <div className="content-container-single-column">
+                        {story.sections?.map((section, index) => (
+                            <React.Fragment key={index}>
+                                <StorySection
+                                    title={section.title}
+                                    sentences={section.sentences}
+                                />
+                                <VocabularySection vocabList={section.vocabulary} />
+                            </React.Fragment>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </section>
         </Main>
     );
 };

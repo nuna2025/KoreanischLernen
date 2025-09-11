@@ -1,274 +1,276 @@
 /* src/style.css */
-body {
-    font-family: 'Noto Sans KR', Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-}
+.storybody {
+        // font-family: 'Noto Sans KR', Arial, sans-serif;
+        // margin: 0;
+        // padding: 20px;
+        // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        // min-height: 100vh;
 
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.title-section {
-    background: white;
-    border-radius: 20px 20px 0 0;
-    padding: 40px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 0;
-}
+    .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-.title-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    flex-shrink: 0;
-}
-
-.title-content {
-    flex: 1;
-}
-
-.main-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #2c5aa0;
-    margin: 0 0 15px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
-
-.subtitle {
-    font-size: 14px;
-    color: #667eea;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.description {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #4a5568;
-    margin: 0;
-}
-
-.highlight {
-    color: #e53e3e;
-    font-weight: bold;
-}
-
-.highlight-good {
-    color: #38a169;
-    font-weight: bold;
-}
-
-.content-container {
-    display: flex;
-    gap: 0;
-    background: white;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    overflow: hidden;
-}
-
-.story-section {
-    flex: 2;
-    padding: 40px;
-    line-height: 1.8;
-    font-size: 18px;
-    color: #333;
-    border-right: 1px solid #e2e8f0;
-}
-
-.story-section h2 {
-    color: #4a5568;
-    margin-bottom: 30px;
-    font-size: 24px;
-    text-align: center;
-    border-bottom: 2px solid #667eea;
-    padding-bottom: 10px;
-}
-
-.hoverable-sentence {
-    position: relative;
-    display: inline;
-    cursor: pointer;
-    padding: 2px 0;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-.hoverable-sentence:hover {
-    background-color: #e6f3ff;
-    color: #2c5aa0;
-}
-
-.tooltip {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #2c5aa0;
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    white-space: nowrap;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    max-width: 400px;
-    white-space: normal;
-}
-
-.tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #2c5aa0 transparent transparent transparent;
-}
-
-.hoverable-sentence:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-.vocabulary-section {
-    flex: 1;
-    background: #f8fafc;
-    padding: 40px;
-}
-
-.vocabulary-section h2 {
-    color: #4a5568;
-    margin-bottom: 25px;
-    font-size: 24px;
-    text-align: center;
-}
-
-.word-card {
-    background: white;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.word-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-.korean-word {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2c5aa0;
-    margin-bottom: 8px;
-}
-
-.german-word {
-    font-size: 18px;
-    color: #667eea;
-    margin-bottom: 5px;
-}
-
-.meaning {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.pronunciation-btn {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 5px 8px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: transform 0.2s ease;
-    margin-right: 5px;
-}
-
-.pronunciation-btn:hover {
-    transform: scale(1.05);
-}
-
-.pronunciation-btn:active {
-    transform: scale(0.95);
-}
-
-@media (max-width: 768px) {
     .title-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px;
-        border-radius: 20px;
-        margin-bottom: 20px;
+        background: white;
+        border-radius: 20px 20px 0 0;
+        padding: 40px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 0;
     }
 
     .title-image {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        flex-shrink: 0;
+    }
+
+    .title-content {
+        flex: 1;
     }
 
     .main-title {
-        font-size: 28px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #2c5aa0;
+        margin: 0 0 15px 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #667eea;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #4a5568;
+        margin: 0;
+    }
+
+    .highlight {
+        color: #e53e3e;
+        font-weight: bold;
+    }
+
+    .highlight-good {
+        color: #38a169;
+        font-weight: bold;
     }
 
     .content-container {
-        flex-direction: column;
-        border-radius: 20px;
+        display: flex;
+        gap: 0;
+        background: white;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        overflow: hidden;
     }
 
-    /* 기존 .content-container는 그대로 두고, 새롭게 추가된 클래스에 대한 스타일을 정의합니다. */
-.content-container-single-column {
-    background: white;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    overflow: hidden;
-}
+    .story-section {
+        flex: 2;
+        padding: 40px;
+        line-height: 1.8;
+        font-size: 18px;
+        color: #333;
+        border-right: 1px solid #e2e8f0;
+    }
 
-.story-section {
-    /* flex를 제거하여 전체 너비를 사용하게 합니다. */
-    flex: none; 
-    padding: 40px;
-    line-height: 1.8;
-    font-size: 18px;
-    color: #333;
-    /* border-right는 더 이상 필요 없으므로 제거 */
-    border-right: none;
-}
+    .story-section h2 {
+        color: #4a5568;
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 2px solid #667eea;
+        padding-bottom: 10px;
+    }
 
-.vocabulary-section {
-    /* flex를 제거하여 전체 너비를 사용하게 합니다. */
-    flex: none;
-    background: #f8fafc;
-    padding: 40px;
-    /* 각 섹션 어휘 목록 간의 구분을 위해 상단에 선을 추가할 수 있습니다. */
-    border-top: 1px solid #e2e8f0;
-}
+    .hoverable-sentence {
+        position: relative;
+        display: inline;
+        cursor: pointer;
+        padding: 2px 0;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
 
-    // .story-section {
-    //     border-right: none;
-    //     border-bottom: 1px solid #e2e8f0;
-    //     padding: 30px;
-    // }
+    .hoverable-sentence:hover {
+        background-color: #e6f3ff;
+        color: #2c5aa0;
+    }
 
-    // .vocabulary-section {
-    //     padding: 30px;
-    // }
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #2c5aa0;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        white-space: nowrap;
+        z-index: 1000;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        max-width: 400px;
+        white-space: normal;
+    }
+
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #2c5aa0 transparent transparent transparent;
+    }
+
+    .hoverable-sentence:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .vocabulary-section {
+        flex: 1;
+        background: #f8fafc;
+        padding: 40px;
+    }
+
+    .vocabulary-section h2 {
+        color: #4a5568;
+        margin-bottom: 25px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .word-card {
+        background: white;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .word-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .korean-word {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2c5aa0;
+        margin-bottom: 8px;
+    }
+
+    .german-word {
+        font-size: 18px;
+        color: #667eea;
+        margin-bottom: 5px;
+    }
+
+    .meaning {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .pronunciation-btn {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        border: none;
+        padding: 5px 8px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: transform 0.2s ease;
+        margin-right: 5px;
+    }
+
+    .pronunciation-btn:hover {
+        transform: scale(1.05);
+    }
+
+    .pronunciation-btn:active {
+        transform: scale(0.95);
+    }
+
+    @media (max-width: 768px) {
+        .title-section {
+            flex-direction: column;
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .title-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .main-title {
+            font-size: 28px;
+        }
+
+        .content-container {
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        /* 기존 .content-container는 그대로 두고, 새롭게 추가된 클래스에 대한 스타일을 정의합니다. */
+    .content-container-single-column {
+        background: white;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+
+    .story-section {
+        /* flex를 제거하여 전체 너비를 사용하게 합니다. */
+        flex: none; 
+        padding: 40px;
+        line-height: 1.8;
+        font-size: 18px;
+        color: #333;
+        /* border-right는 더 이상 필요 없으므로 제거 */
+        border-right: none;
+    }
+
+    .vocabulary-section {
+        /* flex를 제거하여 전체 너비를 사용하게 합니다. */
+        flex: none;
+        background: #f8fafc;
+        padding: 40px;
+        /* 각 섹션 어휘 목록 간의 구분을 위해 상단에 선을 추가할 수 있습니다. */
+        border-top: 1px solid #e2e8f0;
+    }
+
+        // .story-section {
+        //     border-right: none;
+        //     border-bottom: 1px solid #e2e8f0;
+        //     padding: 30px;
+        // }
+
+        // .vocabulary-section {
+        //     padding: 30px;
+        // }
+    }
+
 }
