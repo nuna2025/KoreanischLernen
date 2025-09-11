@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from '../components/section/Main'
-import Classicnovels from '../components/contents/Classicnovels'
-import Fairytales from '../components/contents/Fairytales'
+import NovelPage from '../components/contents/NovelPage'
+import StoryPage from '../components/contents/StoryPage'
 
 import Youtuber from '../components/contents/Youtuber'
 import Youtubes from '../components/contents/Youtubes'
@@ -13,8 +13,8 @@ const Home = () => {
       description='welcome to home page'
     >
       
-      <Fairytales />
-      <Classicnovels />
+      <StoryPage />
+      <NovelPage />
       <Youtuber />
       <Youtubes />
     </Main>
