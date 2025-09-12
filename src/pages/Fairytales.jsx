@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // 👈 Link 컴포넌트를 추가합니다.
+import { Link } from 'react-router-dom'; 
 
 import Main from '../components/section/Main';
 import { storiesData } from '../data/stories';
 import StoryCard from '../components/contents/story/StoryCard';
-import '../assets/scss/section/_stories.scss';
+import fairyCoverImg from '../assets/img/story/fairycover.png'
 
 const Fairytales = () => {
     return (
@@ -12,65 +12,44 @@ const Fairytales = () => {
             title='korean fairy tales'
             description='korean fairy tales'
         >
-            
-            {/* <article class="korean-learning-content" lang="de">
-                <header>
-                    <h1>Lernt Koreanisch mit magischen Volksmärchen!</h1>
-                    <p class="greeting">Hallo zusammen! 
-                        <span lang="ko">안녕하세요</span>
-                    </p>
-                </header>
-
-                <main>
+            <div className="intro-body">      
+                <article className='intro-article'>
+                    <h1 className='intro-title'>Lernt Koreanisch mit magischen Volksmärchen!</h1>
                     <section class="introduction">
-                        <p>Lernst du Koreanisch nur mit Vokabelkarten und Grammatikbüchern? 
-                        Tauche ein in die Welt der 
-                        <strong lang="ko">koreanischen Volksmärchen (전래 동화)</strong> 
-                        und lerne die Sprache <em>lebendig</em> und voller Kultur kennen!</p>
+                        <p>
+                            Hallo zusammen! 안녕하세요! <br />
+                            Lernst du Koreanisch nur mit Vokabelkarten und Grammatikbüchern? <br />
+                            Tauche ein in die Welt der koreanischen Volksmärchen (전래 동화) und lerne die Sprache lebendig und voller Kultur kennen!
+                        </p>
                     </section>
-
-                    <section class="learning-benefits">
+                    <section class="intro-list learning-benefits">
                         <ul>
                             <li>
-                                <strong>Einfache Sprache:</strong> 
+                                <strong> - Einfache Sprache : </strong>
                                 Lerne natürliche Alltagsausdrücke und einfache Satzstrukturen 
                                 aus den Geschichten.
                             </li>
                             <li>
-                                <strong>Kultur verstehen:</strong> 
+                                <strong> - Kultur verstehen : </strong> 
                                 Erfahre mehr über koreanische Werte wie 
-                                <ruby lang="ko">정<rt>jeong</rt></ruby> – 
+                                <ruby lang="ko"> 정<rt>jeong</rt></ruby> – 
                                 emotionale Verbundenheit – und den typischen Humor.
                             </li>
                             <li>
-                                <strong>Mach Spaß:</strong> 
-                                <mark>Vergiss den Lernstress</mark> und tauche in spannende 
+                                <strong> - Mach Spaß : </strong> 
+                                Vergiss den Lernstress und tauche in spannende 
                                 Erzählungen ein!
                             </li>
                         </ul>
                     </section>
-
-                    <section class="story-examples">
-                        <h2>Bekannte Märchen</h2>
-                        <p>Wie wäre es zum <em>Einstieg</em> mit bekannten Märchen wie:</p>
-                        <ul>
-                            <li>
-                                <span lang="ko">"흥부와 놀부"</span> 
-                                (<span lang="de">Heungbu und Nolbu</span>)
-                            </li>
-                            <li>
-                                <span lang="ko">"토끼의 간"</span> 
-                                (<span lang="de">Die Leber des Hasen</span>)
-                            </li>
-                        </ul>
-                    </section>
-
                     <footer class="conclusion">
-                        <p>So verbesserst du dein <mark>Koreanisch</mark> und deine 
-                        <mark>Fantasie</mark> gleichermaßen!</p>
+                        <p>
+                            So verbesserst du dein Koreanischund deine Fantasie gleichermaßen!
+                        </p>
                     </footer>
-                </main>
-            </article> */}
+                </article>
+                <img  src= {fairyCoverImg} alt="korean fairytales cover" className='intro-image' />
+            </div>
 
             <div className="story-list-container">
                 {/* storiesData 배열을 순회하며 각 이야기에 대한 StoryCard를 렌더링합니다. */}

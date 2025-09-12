@@ -18,8 +18,8 @@
     }
 
     .title-image {
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         border-radius: 15px;
         box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         flex-shrink: 0;
@@ -32,7 +32,7 @@
     .main-title {
         font-size: 36px;
         font-weight: bold;
-        color: #2c5aa0;
+        color: var(--blue300);
         margin: 0 0 15px 0;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }
@@ -277,13 +277,23 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 0;
+    color: var(--black400);
+    font-size: 17px;
+
+    .story-card-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--blue300);
+        margin: 0 0 15px 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
 
     .story-card-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        flex-shrink: 0;
     }
 
     .story-card-content {

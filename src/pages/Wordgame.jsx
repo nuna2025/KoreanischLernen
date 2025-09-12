@@ -5,7 +5,6 @@ import Main from '../components/section/Main'
 
 import Card from '../components/contents/Card';
 import { wordPairs } from '../data/wordParis';
-import '../assets/scss/section/_game.scss';
 
 const Wordgame = () => {
     // 1. State Management

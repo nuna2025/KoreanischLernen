@@ -5,8 +5,8 @@ const StoryCard = ({ story }) => {
         <div className="story-card-preview">
             <img src={story.imageSrc} alt={story.title} className="story-card-image" />
             <div className="story-card-content">
-                <h3>{story.title}</h3>
-                <p>{story.subtitle}</p>
+                <h1 className='story-card-title'>{story.title}</h1>
+                <p>{story.description}</p>
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ const TitleSection = ({ title, subtitle, description, imageSrc }) => {
             <div className="title-content">
                 <h1 className="main-title">{title}</h1>
                 <p className="subtitle">{subtitle}</p>
-                <p className="description" dangerouslySetInnerHTML={{ __html: description }} />
+                <p className="description">{description }</p> 
             </div>
         </div>
     );

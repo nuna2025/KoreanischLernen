@@ -1,0 +1,49 @@
+.intro-body {  
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    gap: 20px; // 요소 간 간격
+    align-items: flex-start; // 상단 정렬
+    // background: url(../../img/story/fairycover.png);
+
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0;
+    color: var(--black400);
+    font-size: 17px;
+    font-weight: 400;
+
+    strong {
+        font-weight: bold;
+    }
+
+    .intro-article {
+        flex: 2; // 2 비율
+        min-width: 0; // 플렉스 아이템 축소 허용
+
+    }
+
+    .intro-title {
+        font-size: 30px;
+        font-weight: 500;
+        color: var(--blue);
+        margin: 0 0 15px 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+
+    .intro-image {
+        flex: 1; // 1 비율
+        width: 400px;
+        height: 400px;
+        object-fit: cover; // 이미지 비율 유지하며 채우기border-radius: 15px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        // box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+}
