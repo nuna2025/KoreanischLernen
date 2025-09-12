@@ -1,6 +1,6 @@
 .intro-body {  
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
 
     gap: 20px; // 요소 간 간격
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     color: var(--black400);
     font-size: 17px;
     font-weight: 400;

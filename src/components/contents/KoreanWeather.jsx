@@ -80,23 +80,12 @@ export default function KoreanWeather() {
   }
 
   return (
-    <div className="wrap" style={{ display: "flex", gap: 20, alignItems: "flex-start", maxWidth: 980, margin: "0 auto", fontFamily: "Inter, sans-serif" }}>
-      <article className="intro" style={{ flex: 1, background: "#fff", padding: 20, borderRadius: 12, boxShadow: "0 6px 18px rgba(15,23,42,0.06)" }}>
-        <h1>Willkommen!</h1>
-        <p>Hallo! Diese Website wurde speziell für Muttersprachler des Deutschen entwickelt, die Koreanisch auf einfache und unterhaltsame Weise lernen möchten. Anstatt trockene Lehrbücher zu verwenden, können Sie die Sprache ganz natürlich durch spannende Inhalte erwerben.</p>
-        <p>Hier können Sie Koreanisch auf folgende Arten genießen:</p>
-        <ul>
-          <li>Übung im Hangeul-Tippen: Gewöhnen Sie sich spielerisch an die Hangeul-Tastaturbelegung.</li>
-          <li>Koreanische Volksmärchen: Lernen Sie Vokabeln und Satzstrukturen durch das Lesen von spannenden alten Geschichten.</li>
-          <li>Klassische koreanische Romane: Tauchen Sie tiefer in die koreanische Literatur ein, um Sprache und Kultur gleichzeitig zu verstehen.</li>
-        </ul>
-        <p style={{ marginTop: 12 }}>Wir laden Sie ein in die Welt einer neuen Sprache!</p>
-      </article>
+   
 
-      <aside className="widget" style={{ width: 220, minWidth: 220, background: "linear-gradient(180deg,#ffffff,#fbfeff)", borderRadius: 12, padding: 12, boxShadow: "0 8px 22px rgba(2,6,23,0.08)", display: "flex", flexDirection: "column", gap: 8 }}>
+      <aside className="widget" >
         <div>
           <label htmlFor="city" style={{ fontSize: 12, color: "#6b7280" }}>Ort:</label>
-          <select id="city" value={`${city.lat},${city.lon}`} onChange={handleCityChange} style={{ width: "100%", padding: 6, borderRadius: 8, border: "1px solid #e6eef3", background: "white" }}>
+          <select id="city" value={`${city.lat},${city.lon}`} onChange={handleCityChange} style={{ width: "100%", padding: 6, borderRadius: 8, border: "1px solid #e6eef3", background: "white",color: "#6b7280" }}>
             <option value="37.5665,126.9780">Seoul</option>
             <option value="35.1796,129.0756">Busan</option>
             <option value="35.8714,128.6014">Daegu</option>
@@ -110,7 +99,7 @@ export default function KoreanWeather() {
           <div>
             <div style={{ fontWeight: 600 }}>{city.name}</div>
             <div style={{ fontSize: 12, color: "#6b7280" }}>Stand (API): {weather ? new Date(weather.time).toLocaleString("de-DE", { timeZone: "Asia/Seoul" }) : "—"}</div>
-            <div style={{ fontSize: 12, color: "#6b7280" }}>KST: {kst}</div>
+            <div style={{ fontSize: 12, color: "#6b7280"}}>Korea Time: <span style={{fontWeight: 700, color: "#f00"}}>{kst}</span></div>
           </div>
           <div style={{ fontSize: 28, fontWeight: 700 }}>{weather ? Math.round(weather.temperature) + "°C" : "--°C"}</div>
         </div>
@@ -127,6 +116,6 @@ export default function KoreanWeather() {
         {loading && <div style={{ fontSize: 12, color: "#6b7280", textAlign: "center" }}>Laden…</div>}
         {error && <div style={{ color: "#b91c1c", fontSize: 13, textAlign: "center" }}>{error}</div>}
       </aside>
-    </div>
+    
   );
 }
