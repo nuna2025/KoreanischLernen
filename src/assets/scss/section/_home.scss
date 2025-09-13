@@ -1,31 +1,32 @@
 .home-wrap {
     max-width: 1200px;
-    margin: 20px auto 0; 
+    margin: 30px auto 0; 
     display: flex; 
     gap: 20px; 
-    align-items: flex-start; // alignItems: "flex-start"; 
+    align-items: flex-start;
     
     background: white;
     border-radius: 20px;
-    padding: 40px;
+    padding: 70px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
     gap: 30px;
     margin-bottom: 10px;
-    color: var(--black400);
-    font-size: 17px;
-    font-weight: 400;
+    color: var(--black300);
+    font-size: 18px;
+    font-weight: 500;
 
+    background-image: url(../../img/novel/novelcover.png);
 
     
 
     .home-intro {
         flex: 1; 
-        background: "#fff"; 
+        background: rgba(240, 240, 240, 0.8);//#fff ; 
         padding: 20px; 
-        border-radius: 12px;// borderRadius: 12; 
-        box-shadow: 0 6px 18px rgba(15,23,42,0.06);//boxShadow: "0 6px 18px rgba(15,23,42,0.06)";
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(15,23,42,0.2);//boxShadow: "0 6px 18px rgba(15,23,42,0.06)";
 
         h1 {
             font-size: 35px;
