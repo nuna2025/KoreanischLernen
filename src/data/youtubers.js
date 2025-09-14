@@ -13,6 +13,12 @@ export const youtubersData = [
         link: "https://www.youtube.com/@heemintv3618/featured"
     },
     {
+        title: "Seoya in Germany",
+        imageSrc: "https://yt3.googleusercontent.com/ytc/AIdro_mrivfFD9LSdcJM9EYVlZ-9PbWrjH7Q9Hu9mo9dFzDg6g=s160-c-k-c0x00ffffff-no-rj",
+        description: "Hallo,Leute :) Ich bin Seoya! Ich komme aus 'KOREA' Ich freue mich euch zu sehen!",
+        link: "https://www.youtube.com/watch?v=3OI4yIXTE5U&list=PLeL0_bzrp6NZZx-7-3nc_t9DXcCicyv29"
+    },
+    {
         title: "Hyunok Jang",
         imageSrc: "https://yt3.googleusercontent.com/XLU41zOe-DsuL38uq6mIqY_WjD4WDlLxX0hn6KreKj-Y5tQmDFW7mDf0zqfYzDq4fxhrlvatyw=s160-c-k-c0x00ffffff-no-rj",
         description: "Mein Name ist Hyunok Jang, ich bin Koreanischlehrerin. Auf diesem Kanal könnt ihr auf Deutsch Koreanisch lernen. Wenn ihr Koreanisch lernen wollt, fangt am besten mit dem Alphabet an und macht dann mit den Koreanisch für Anfänger Videos weiter. Das koreanische Alphabet lernen dauert ein bis zwei Wochen, je nachdem wie fleißig ihr lernt. Neue Videos gibt es jeden Sonntag und Mittwoch um 18 Uhr und falls ihr Fragen zu einer der Lektionen habt, beantworte ich sie jederzeit gerne.",

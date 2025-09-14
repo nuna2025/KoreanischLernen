@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer id='footer' role='contentinfo'>
-            Footer
+            "Eine neue Sprache. Eine neue Perspektive."
         </footer>
     )
 }
