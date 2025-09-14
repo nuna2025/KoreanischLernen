@@ -3,9 +3,8 @@
     margin: 10px auto;
     display: flex;
 
-    gap: 20px; // 요소 간 간격
-    align-items: flex-start; // 상단 정렬
-    // background: url(../../img/story/fairycover.png);
+    gap: 20px; 
+    align-items: flex-start; 
 
     background: white;
     border-radius: 20px;
@@ -21,29 +20,39 @@
 
     strong {
         font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     .intro-article {
-        flex: 2; // 2 비율
-        min-width: 0; // 플렉스 아이템 축소 허용
+        flex: 2; 
+        min-width: 0; 
 
+        .intro-title {
+            font-size: 30px;
+            font-weight: 500;
+            color: var(--blue);
+            margin: 0 0 15px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .conclusion {
+            padding-top: 10px;
+        }
     }
 
-    .intro-title {
-        font-size: 30px;
-        font-weight: 500;
-        color: var(--blue);
-        margin: 0 0 15px 0;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    }
+    
 
     .intro-image {
-        flex: 1; // 1 비율
+        flex: 1; 
         width: 400px;
         height: 400px;
-        object-fit: cover; // 이미지 비율 유지하며 채우기border-radius: 15px;
+        object-fit: cover; 
         border-radius: 20px;
         box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        // box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .youtuber-introimg {
+        width: 300px;
+        height: 300px;
     }
 }

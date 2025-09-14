@@ -6,6 +6,7 @@ const Home = lazy(() => import('./pages/Home'))
 const Wordgame = lazy(() => import('./pages/Wordgame'))
 
 const StoryDetail = lazy(() => import('./pages/StoryDetail')) // 👈 개별 이야기 페이지
+const NovelDetail = lazy(() => import('./pages/NovelDetail')) // 👈 개별 소설 페이지
 
 const Fairytales = lazy(() => import('./pages/Fairytales'))
 const Classicnovels = lazy(() => import('./pages/Classicnovels'))
@@ -25,7 +26,8 @@ function App() {
                 <Route path='/fairytales' element={<Fairytales />} />
                 {/* 👈 새로운 라우트 추가: URL 파라미터를 사용하여 동적으로 페이지를 렌더링합니다. */}
                 <Route path="/fairytales/:id" element={<StoryDetail />} />
-                <Route path='/classicnovels' element={<Classicnovels />} />              
+                <Route path='/classicnovels' element={<Classicnovels />} />    
+                <Route path="/classicnovels/:id" element={<NovelDetail />} />         
                 <Route path='/youtuber' element={<Youtuber />} />
                 <Route path='/youtubes' element={<Youtubes />} />
                 <Route path='/search/:searchID' element={<Search />} />

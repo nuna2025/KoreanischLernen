@@ -44,7 +44,7 @@ const Fairytales = () => {
                     </section>
                     <footer class="conclusion">
                         <p>
-                            So verbesserst du dein Koreanischund deine Fantasie gleichermaßen!
+                            So verbesserst du dein Koreanisch und deine Fantasie gleichermaßen!
                         </p>
                     </footer>
                 </article>
