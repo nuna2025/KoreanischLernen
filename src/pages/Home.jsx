@@ -1,9 +1,6 @@
 import React from 'react'
 import Main from '../components/section/Main'
-
 import KoreanWeather from '../components/contents/KoreanWeather'
-
-import Youtubes from '../components/contents/Youtubes'
 
 const Home = () => {
   return (

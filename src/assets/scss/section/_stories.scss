@@ -31,10 +31,10 @@
 
     .main-title {
         font-size: 36px;
-        font-weight: bold;
-        color: var(--blue300);
+        font-weight: 500;
+        color: var(--black300);
         margin: 0 0 15px 0;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     .subtitle {
@@ -277,15 +277,15 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 0;
-    color: var(--black400);
+    color: var(--black200);
     font-size: 17px;
 
     .story-card-title {
         font-size: 36px;
-        font-weight: bold;
-        color: var(--blue300);
+        font-weight: 600;
+        color: var(--black300);
         margin: 0 0 15px 0;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     }
 
     .story-card-image {

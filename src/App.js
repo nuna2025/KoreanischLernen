@@ -1,6 +1,7 @@
 import React, {Suspense, lazy} from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from './components/section/Main';
+// import SearchResult from './pages/SearchResult';
 
 const Home = lazy(() => import('./pages/Home'))
 const Wordgame = lazy(() => import('./pages/Wordgame'))
@@ -10,7 +11,7 @@ const NovelDetail = lazy(() => import('./pages/NovelDetail')) // 👈 개별 소
 
 const Fairytales = lazy(() => import('./pages/Fairytales'))
 const Classicnovels = lazy(() => import('./pages/Classicnovels'))
-const Search = lazy(() => import('./pages/Search'))
+const SearchResult = lazy(() => import('./pages/SearchResult'))
 const Youtuber = lazy(() => import('./pages/Youtuber'))
 const Youtubes = lazy(() => import('./pages/Youtubes'))
 const Not = lazy(() => import('./pages/Not'))
@@ -30,7 +31,8 @@ function App() {
                 <Route path="/classicnovels/:id" element={<NovelDetail />} />         
                 <Route path='/youtuber' element={<Youtuber />} />
                 <Route path='/youtubes' element={<Youtubes />} />
-                <Route path='/search/:searchID' element={<Search />} />
+                {/* <Route path='/searchresult/:searchID' element={<SearchResult />} /> */}
+                <Route path='/searchresult' element={<SearchResult />} />
                 <Route path='*' element={<Not />} />
             </Routes>
         </Suspense>
