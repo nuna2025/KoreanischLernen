@@ -1,12 +1,14 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SearchResult from "../../pages/SearchResult";
+
+
+
 
 const koreanClassics = [
-  ['홍길동전', 'classicnovels/hongid'],
+  ['홍길동전', 'classicnovels/hongildong'],
   ['흥부와 놀부', 'fairytales/hnid'],
-  ['해와달이된 오누이', 'fairytales/sunmondid']
+  ['해와 달이 된 오누이', 'fairytales/sunmondid']
 ];
 
 
@@ -106,15 +108,6 @@ const Search = () => {
     setShowSuggestions(false);
   };
 
-//   if (showResult) {
-//     return (
-//       <SearchResult 
-//         title={searchResult.title}
-//         url={searchResult.url}
-//       />
-//     );
-//   }
-
   return (
 
         <div id="search" >
@@ -136,23 +129,24 @@ const Search = () => {
                     onFocus={() => searchTerm && setShowSuggestions(suggestions.length > 0)}
                 />
 
-                
-                
-                
+            
                 {showSuggestions && suggestions.length > 0 && (
-                    <div className="absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-10 max-h-60 overflow-y-auto">
+                    <div className="suggestion-list">
                         {suggestions.map(([title, url], index) => (
                             <div
                                 key={title}
-                                className={`px-6 py-3 cursor-pointer border-b border-gray-100 last:border-b-0 transition-colors ${
-                                index === selectedIndex 
-                                    ? 'bg-blue-50 text-blue-700' 
-                                    : 'hover:bg-gray-50'
-                                }`}
+
+
+                                className="dropdown-item"
+                                data-selected={index === selectedIndex}
+                              
+
+
+
                                 onClick={() => handleSuggestionClick(index)}
                                 onMouseEnter={() => setSelectedIndex(index)}
                             >
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                 <span className="font-medium">{title}</span>
                                 {/* <span className="text-sm text-gray-500">
                                     {url.includes('classicnovels') ? '( ist 고전소설)' : '( ist 전래동화)'}

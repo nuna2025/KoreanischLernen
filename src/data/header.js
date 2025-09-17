@@ -45,22 +45,22 @@ export const headerMenus = [
 export const searchKeyword = [
     {
         title:"한글타자게임",
-        src:"/search/wordgame"
+        src:"/wordgame"
     },
      {
         title:"한국전래동화",
-        src:"/search/fairytales"
+        src:"/fairytales"
     },
      {
         title:"한국고전소설",
-        src:"/search/classicnovels"
+        src:"/classicnovels"
     }
 ]
 
 export const snsLink = [
     {
         title: "googleblog",
-        url: "/",
+        url: "https://kozeit.blogspot.com/",
         icon: <RiBloggerFill />
     },
     {
@@ -70,7 +70,7 @@ export const snsLink = [
     },
     {
         title: "kakaotalk",
-        url: "/",
+        url: "https://open.kakao.com/o/gwiNVBSh",
         icon: <RiKakaoTalkFill />
     }
 ]

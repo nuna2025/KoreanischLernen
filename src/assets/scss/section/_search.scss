@@ -24,4 +24,55 @@
         font-weight: 700;
         color: var(--blue);
     }
+
+    .suggestion-list {
+        padding: 2px 25px;
+
+        
+        .dropdown-item {
+            --bg-color: transparent;
+            --text-color: inherit;
+            --border-color: #f3f4f6;
+
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.2s ease;
+
+            border-radius: 5px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                --bg-color: #f9fafb;
+            }
+
+            &[data-selected="true"] {
+                --bg-color: #eff6ff;
+                --text-color: #1d4ed8;
+
+                &:hover {
+                --bg-color: #eff6ff; // 선택된 상태 유지
+                }
+            }
+        }
+
+    }
+}
+
+.not-research {
+    padding: 30px 45px;
+    
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--black200);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.searchresult-container {
+     margin-top: 20px;
 }
