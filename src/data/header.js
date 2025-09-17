@@ -65,7 +65,7 @@ export const snsLink = [
     },
     {
         title: "githubblog",
-        url: "/",
+        url: "https://kozeit.blogspot.com/",
         icon: <RiGithubFill />
     },
     {
