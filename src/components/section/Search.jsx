@@ -17,8 +17,6 @@ const Search = () => {
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
-  const [searchResult, setSearchResult] = useState(null);
-  const [showResult, setShowResult] = useState(false);
   const inputRef = useRef(null);
 
   const navigate = useNavigate();
@@ -76,11 +74,6 @@ const Search = () => {
     );
 
     if (found) {
-        // 검색 결과를 찾았을 경우
-        setSearchResult({
-            title: found[0],
-            url: found[1]
-        });
         const resultData = {
             title: found[0],
             url: found[1]
@@ -90,11 +83,6 @@ const Search = () => {
         navigate('/searchresult', { state: resultData });
       
     } else {
-        setSearchResult({
-            title: 'not',
-            url: ''
-        });
-        // 검색 결과가 없을 경우
         const resultData = {
             title: 'not',
             url: ''
@@ -103,9 +91,7 @@ const Search = () => {
         navigate('/searchresult', { state: resultData });
     
     }
-    
-    setShowResult(true);
-    setShowSuggestions(false);
+  
   };
 
   return (
