@@ -55,4 +55,8 @@
         width: 200px;
         height: 250px;
     }
+
+    @media(max-width: 1000px){
+        flex-direction: column;
+    }
 }

@@ -37,13 +37,30 @@
     backdrop-filter: blur(10px);
 }
 
-    // position: fixed; 
-    // bottom: 0;
-    // right: 0;
-    // width: 100%;
-    // height: 60px;
-    // margin: 0 auto;
-    // padding-left: 260px;
-    // text-align: center;
-    // background: var(--secondary25-1);
+@media (max-width:800px){
+    #header {
+        left: -260px;
+        background-color: var(--black);
+        transition: left 0.3s;
+
+        h1 {
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        .header__menu {
+            margin-top: 90px;
+        };
+        &.active {
+            left: 0;
+        }
+    }
+    #main {
+        padding-left: 0;
+    }
+    #footer {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 

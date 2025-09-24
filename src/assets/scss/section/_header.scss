@@ -1,5 +1,4 @@
 .header__logo {
-    border-bottom: 5px solid var(--primary10);
 
     a {
         display: flex;
@@ -23,10 +22,18 @@
             color: var(--primary90);
         }
     }
+
+    @media (max-width:800px){
+        background-color: var(--secondary12);
+        width: 260px;
+        height: 71px;
+        transition: left 0.3s;
+    }
 }
 
 .header__menu {
     padding: 10px 0;
+    border-top: 5px solid var(--primary10);
 
     .menu {
         border-bottom: 1px solid var(--primary10);
@@ -111,6 +118,10 @@
     background-color: var(--blue100);
     backdrop-filter: blur(10px);
     border-top: 5px solid var(--red);
+
+    @media (max-width:800px) {
+        display: none;
+    }
 
     li {
         display: inline-block;

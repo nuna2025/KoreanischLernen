@@ -29,8 +29,9 @@ const Home = () => {
           </ul>
           <p className='home-footer' >Wir laden Sie ein in die Welt einer neuen Sprache!</p>
         </article>
-
-        <KoreanWeather />
+        <div className="widget-container">
+          <KoreanWeather />
+        </div>
         
       </div>
     </Main>
