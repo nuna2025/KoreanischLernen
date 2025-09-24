@@ -42,11 +42,15 @@ const StoryPage = ({ story }) => {
                         {story.sections?.map((section, index) => (
                             <React.Fragment key={index}>
                                 <div className='story-voca-pharagh'>
-                                    <StorySection
-                                        title={section.title}
-                                        sentences={section.sentences}
-                                    />
-                                    <VocabularySection vocabList={section.vocabulary} />
+                                    <div className="story-container">
+                                        <StorySection
+                                            title={section.title}
+                                            sentences={section.sentences}
+                                        />
+                                    </div>
+                                    <div className="voca-container">
+                                        <VocabularySection vocabList={section.vocabulary} />
+                                    </div>
                                 </div>
                             </React.Fragment>
                         ))}
