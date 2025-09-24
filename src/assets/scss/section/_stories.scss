@@ -299,6 +299,10 @@
     .story-card-content {
         flex: 1;
     }
+
+    @media(max-width: 1000px){
+        flex-direction: column;
+    }
 }
 
     
