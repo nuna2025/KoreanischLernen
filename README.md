@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+**Koreanisch Lernen**
+netlify: https://koreanischlernen.netlify.app/
+vercel: https://koreanisch-lernen-swart.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**[Project Name] - A Korean Learning Website for German Friends**
 
-## Available Scripts
+**Project Overview**
 
-In the project directory, you can run:
+This project is a personal practice website built to help my German friends learn Korean. Developed with **React**, the site is designed to make learning fun and effective by immersing users in Korean culture. I honestly used **AI to assist** with the content ideas and site structure, which helped streamline the development process.
 
-### `npm start`
+* **Motivation:** Seeing my German friends' desire to learn Korean, I wanted to create a more engaging learning environment for them. I decided to build a website that uses cultural content instead of dry textbooks, making language acquisition a more enjoyable experience.
+* **Key Features:**
+    * **Korean Folk Tales:** Learners can expand their vocabulary and understand context by reading these engaging stories.
+    * **Ancient Korean Novels:** This feature allows users to explore the depth of Korean literature while learning advanced vocabulary and sentence structures.
+    * **Typing Game:** An interactive game that helps users practice their Korean keyboarding skills, adding an element of fun to the study process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Tech Stack**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Front-end:** React
+* **Styling:** CSS (SCSS)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
